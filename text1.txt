@@ -11,4 +11,12 @@ git fetch -p　・・・・prune もう使われていないリモートブラ�
 git checkout -b ブランチ名
 git checkout -b ローカルに作成するブランチ名 origin/作成元のリモートのブランチ名
 git push -u origin 作成したブランチ名・・・・・・・ーuはアップストリーム　ローカルブランチをremoteブランチとして保存する。
-
+git status・・・・・・差分があるファイルを確認
+git diff・・・・・・・ファイルの中身の差分を確認
+git add *
+git add ファイル名（パスから）・・・・・indexにstageされる
+git log ・・・・・・・・・・コミット履歴を確認
+git reset HEAD ファイル名　　・・・・・・・HEADまでreset
+git reset --hard HEAD
+git commit -m コメントを入れれる
+git commit  →vimが起動してコミットメッセージを入れれるようになる。何も入れずに保存すればcommitされない。
