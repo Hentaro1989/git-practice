@@ -1,3 +1,14 @@
-This is my first text.
-add a comment.
-This is a commit from a feature branch.
+git branch -a  ・・・・・-a はリモートとローカルどちらも全部現在のブランチを確認
+git branch -r ・・・・・・リモートのブランチを確認
+git branch ・・・・・・・ローカルのブランチを確認
+
+git branch 何かのブランチ名・・・・・ ブランチをローカルに作成
+
+
+
+git checkout 何かのブランチ名・・・・そのブランチに移動
+git fetch -p　・・・・prune もう使われていないリモートブランチの追跡を削除する
+git checkout -b ブランチ名
+git checkout -b ローカルに作成するブランチ名 origin/作成元のリモートのブランチ名
+git push -u origin 作成したブランチ名・・・・・・・ーuはアップストリーム　ローカルブランチをremoteブランチとして保存する。
+
