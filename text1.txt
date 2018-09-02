@@ -1,22 +1,21 @@
-git branch -a  ・・・・・-a はリモートとローカルどちらも全部現在のブランチを確認
-git branch -r ・・・・・・リモートのブランチを確認
-git branch ・・・・・・・ローカルのブランチを確認
+git branch				ローカルのブランチを表示
+git branch -a				-a は全ローカル、リモートブランチを表示
+git branch -r				リモートのブランチを表示
+git branch <ブランチ名>			ブランチをローカルに作成
 
-git branch 何かのブランチ名・・・・・ ブランチをローカルに作成
+git checkout <ブランチ名>		そのブランチに移動
+git checkout -b <ブランチ名>		そのブランチ名が存在しない場合、そのブランチを作成してからチェックアウト
+git checkout -b <ブランチ名> <origin/作成元のリモートのブランチ名>
+					対象のリモートブランチから任意の名前でローカルにチェックアウト
 
-
-
-git checkout 何かのブランチ名・・・・そのブランチに移動
-git fetch -p　・・・・prune もう使われていないリモートブランチの追跡を削除する
-git checkout -b ブランチ名
-git checkout -b ローカルに作成するブランチ名 origin/作成元のリモートのブランチ名
-git push -u origin 作成したブランチ名・・・・・・・ーuはアップストリーム　ローカルブランチをremoteブランチとして保存する。
-git status・・・・・・差分があるファイルを確認
-git diff・・・・・・・ファイルの中身の差分を確認
-git add *
-git add ファイル名（パスから）・・・・・indexにstageされる
-git log ・・・・・・・・・・コミット履歴を確認
-git reset HEAD ファイル名　　・・・・・・・HEADまでreset
-git reset --hard HEAD
-git commit -m コメントを入れれる
-git commit  →vimが起動してコミットメッセージを入れれるようになる。何も入れずに保存すればcommitされない。
+git fetch -p				prune もう存在しないリモートブランチの追跡を削除
+git push -u origin <ブランチ名>		-u はアップストリーム　ローカルブランチをremoteブランチとして保存
+git status				差分があるファイルを確認
+git diff				ファイルの中身の差分を確認
+git add *				変更のある全ファイルを index へ stage
+git add <ファイル名>（パスから）	index に stage
+git log					コミット履歴を確認
+git reset HEAD <ファイル名>		HEADまでreset
+git reset --hard HEAD			ファイルの変更を破棄
+git commit -m "コメント"		エディタを開かずコメント
+git commit				vim が起動してコミットメッセージを入れられる。保存しなかったりメッセージを書かなければ commit されない
