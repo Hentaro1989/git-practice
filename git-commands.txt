@@ -16,7 +16,7 @@ git diff				ファイルの中身の差分を確認
 git add *				変更のある全ファイルを index へ stage
 git add <ファイル名>（パスから）	index に stage
 git log					コミット履歴を確認
-git reset HEAD <ファイル名>		HEADまでreset
+git reset HEAD <ファイル名>		stage したファイルを unstage
 git reset --hard HEAD			ファイルの変更を破棄
 git commit -m "コメント"		エディタを開かずコメント
 git commit				vim が起動してコミットメッセージを入れられる。保存しなかったりメッセージを書かなければ commit されない
