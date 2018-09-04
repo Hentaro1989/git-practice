@@ -10,6 +10,7 @@ git checkout -b <ブランチ名> <origin/作成元のリモートのブラン�
 
 git fetch -p				prune もう存在しないリモートブランチの追跡を削除
 git push -u origin <ブランチ名>		-u はアップストリーム　ローカルブランチをremoteブランチとして保存
+git push -d origin <ブランチ名>		リモートブランチを削除
 git status				差分があるファイルを確認
 git diff				ファイルの中身の差分を確認
 git add *				変更のある全ファイルを index へ stage
