@@ -21,3 +21,4 @@ git reset HEAD <ファイル名>		stage したファイルを unstage
 git reset --hard HEAD			ファイルの変更を破棄
 git commit -m "コメント"		エディタを開かずコメント
 git commit				vim が起動してコミットメッセージを入れられる。保存しなかったりメッセージを書かなければ commit されない
+git config --global alias.log-g "log --all --oneline --graph"
