@@ -22,3 +22,9 @@ git reset --hard HEAD			ファイルの変更を破棄
 git commit -m "コメント"		エディタを開かずコメント
 git commit				vim が起動してコミットメッセージを入れられる。保存しなかったりメッセージを書かなければ commit されない
 git config --global alias.log-g "log --all --oneline --graph"
+git stash save                         stashの作成。saveは省略可能
+git stash save "好きなstash名"         ダブルクォーテーションで囲ってstashに好きな名前を付けられる
+git stash list　　　　　　　　　　　　 現在stashされているlistを表示。新しいstashほどlist番号が小さい
+git stash apply stash@{i}　　　　　    stashの適用。iはstash list番号
+git stash drop stash@{i}　　　　　　　 stash listからstashの削除  iはstash list番号
+git stash pop stash@{i}                stashの適用とstash listからのstash削除を同時に行える
